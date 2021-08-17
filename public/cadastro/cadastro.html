@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous"></script>
+    <title>Cadastro</title>
+</head>
+
+<body>
+     <!-- ESTRELAS -->
+     <section class="star" style="width: 100vw;">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </section>
+<!-- ESTRELAS -->
+    <main class="container">
+        <h2>Criar Conta :)</h1>
+
+            <form id="form_cadastro" method="POST" onsubmit="return cadastrar()">
+            <!-- <label for="name"> 
+                <span>Nome</span>
+                <input type="text" id="nome" name="nome" class="input-padrao" required minlength="4">
+            </label> -->
+
+            <div class="input-field">
+                <input type="email" name="email" id="username"
+                    placeholder="E-mail">
+                <div class="underline"></div>
+            </div>
+            <div class="input-field">
+                <input type="password" name="senha" id="password"
+                    placeholder="Senha">
+                <div class="underline"></div>
+            </div>
+
+            <input type="submit" id="btn_entrar" value="Cadastrar" class="btn-green" required minlength="4">
+        </form>
+
+        <div class="footer">
+            <span>Ou conectar com Social Media</span>
+            <div class="social-media">
+                <div class="social-rede twitter">
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                        Entrar com Twitter
+                    </a>
+                </div>
+                <div class="social-rede facebook">
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                        Entrar com Facebook
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
+<script>
+
+    function cadastrar() {
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+
+            if (response.ok) {
+                // window.location.href = '../../public/login/login.html';
+                window.location.href = '../login/login.html';
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                    // div_erro.innerHTML = resposta;
+                });
+            }
+        });
+
+        return false;
+    }
+
+
+</script>

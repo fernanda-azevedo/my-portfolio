@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous"></script>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- ESTRELAS -->
+     <section class="star" style="width: 100vw;">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </section>
+<!-- ESTRELAS -->
+    <main class="container">
+        <h2>Login</h2>
+
+        <form id="form_login" method="post" onsubmit="return entrar()">
+            <div class="input-field">
+                <input type="text" name="email" id="username"
+                    placeholder="E-mail">
+                <div class="underline"></div>
+            </div>
+            <div class="input-field">
+                <input type="password" name="senha" id="password"
+                    placeholder="Senha">
+                <div class="underline"></div>
+            </div>
+            
+            <input type="submit" value="Continue"> 
+        </form>
+
+        <div class="footer">
+            <span>Ou conectar com Social Media</span>
+            <div class="social-media">
+                <div class="social-rede twitter">
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                        Logar com Twitter
+                    </a>
+                </div>
+                <div class="social-rede facebook">
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                        Logar com Facebook
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
+<script>
+
+    function entrar() {
+        // aguardar();
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.login;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+
+                    window.location.href = '../index.html';
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    // finalizar_aguardar(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+    // function aguardar() {
+    //     btn_entrar.disabled = true;
+    //     img_aguarde.style.visibility = 'visible';
+    //     div_erro.style.visibility = 'hidden';
+    // }
+
+    // function finalizar_aguardar(resposta) {
+    //     btn_entrar.disabled = false;
+    //     img_aguarde.style.visibility = 'hidden';
+    //     div_erro.style.visibility = 'visible';
+    //     div_erro.innerHTML = resposta;
+    // }
+
+</script>

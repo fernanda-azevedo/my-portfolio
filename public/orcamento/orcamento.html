@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="orcamento.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="sessao-orcamento" id="orcamento">
+        <div class="orcamento-wrapper">
+          <h1>Faça um orçamento</h1>
+          <form>
+            <label for="qtde">Qtde de Páginas</label>
+            <input type="number" min="1" name="qtde" id="qtde">
+            <label for="js">Preciso de um script JS</label>
+            <input type="checkbox" name="js" id="js" class="selects">
+            <label>Layout</label>
+               <div class="group-layout">
+                  <div>
+                <input type="radio" name="layout" id="layout-sim" class="selects">
+                <label for="layout-sim">Preciso de um layout</label>
+                </div>
+              <div>
+                <input type="radio" name="layout" id="layout-nao" class="selects">
+                <label for="layout-nao">Já tenho um layout</label>
+              </div>
+            </div>
+            <label for="prazo">Prazo</label>
+            <input type="range" name="prazo" id="prazo" min="1" max="10">
+            <label id="preco">R$ 0,00</label>
+          </form>
+            
+          <div class="group-content">
+            <div class="group-radio">
+              <input id="sem" type="radio" name="radio" value="sem" checked class="selects" onclick="troca1()">
+              <label for="sem">À vista</label>
+              <span class="group-radio-message">
+                <b>DESCONTO</b>
+                <P>de <b>30% </b>no <br> boleto bancário</P>
+              </span>
+            </div>
+            
+            <div class="group-radio" onclick="troca2()">
+              <input id="com" type="radio" name="radio" class="selects" >
+              <label for="com">Parcelado</label>
+              <span class="group-radio-message">
+                <b>PARCELE</b>
+                <P>em até <b>10X</b> de <br> sem juros no cartão</P>
+              </span>
+            </div>
+          </div>
+        
+        <a href="../home/pagamento/pagamento.html">
+          <button class="btn btn-orcamento" type="submit">Efetuar pagamento</button>
+        </a>
+        </div>
+      </section>
+</body>
+</html>
+
+<!-- JavaScript do orçamento -->
+<script>
+  // A função document.querySelector() buscaa um elemento do mundo HTML e traz para o mundo
+  // JavaScript para poder manipulá-lo. A função recebe um parâmetro, um caso, um seletor CSS (id). 
+
+
+  // O método JavaScript addEventListener () permite configurar funções a serem chamadas quando um evento 
+  // especificado acontece, como quando um usuário clica em um botão.
+    document.querySelector("#qtde").addEventListener("change", atualizarPreco)
+    document.querySelector("#js").addEventListener("change", atualizarPreco)
+    document.querySelector("#layout-sim").addEventListener("change", atualizarPreco)
+    document.querySelector("#layout-nao").addEventListener("change", atualizarPreco)
+    document.querySelector("#prazo").addEventListener("change", function () {
+    var prazo = document.querySelector("#prazo").value
+    document.querySelector("label[for=prazo]").innerHTML = `Prazo: ${prazo} semanas`;
+    atualizarPreco()
+})
+
+// Este "checked" significa: se for clicado(checado), ele irá incluir o js
+    function atualizarPreco(){
+    var qtde = document.querySelector("#qtde").value
+    var temJS = document.querySelector("#js").checked
+    var incluiLayout = document.querySelector("#layout-sim").checked
+    var prazo = document.querySelector("#prazo").value
+  
+    // Meus preços fixos
+    var preco = qtde * 100;
+    if (temJS) { 
+      preco * 1;
+    }
+
+    if (incluiLayout) {
+      preco += 100;
+    }
+
+    var taxaUrgencia = 1 - prazo*0.1;
+    preco *= 1 + taxaUrgencia
+  
+    document.querySelector("#preco").innerHTML = `R$ ${preco.toFixed(2)}`
+}
+
+function troca1(){
+var preco = document.getElementById('preco');
+}
+
+function troca2(){
+var preco = document.getElementById('preco');
+}
+
+</script>

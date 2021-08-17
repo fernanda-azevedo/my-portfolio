@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header-container">
+    <!-- Estrelas -->
+    <section class="star">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </section>
+    <!-- Estrelas -->
+        <!-- Início do Menú Hamburguer -->
+        <div class="header">
+            <div class="checkbox-container">
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="toggle">
+                    <label class="checkbox" for="toggle">
+                        <div class="traco"></div>
+                        <div class="traco"></div>
+                        <div class="traco"></div>
+                    </label>
+                    <div class="menu"></div>
+                    <nav class="menu-itens">
+                        <ul>
+                            <li><a href="../login/index.html">Login</a></li>
+                            <li><a href="../cadastro/cadastro.html">Cadastro</a></li>
+                            <li><a href="../public/home/projeto1florence.html">Florence</a></li>
+                            <li><a href="../public/home/cvitae.html">CVitæ</a></li>
+                            <li><a href="../public/home/capsule.html">Capsule Corp</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Fim do Menú Hambúrguer -->
+
+        <!-- Início da home -->
+        <div>
+            <h1 id="meu-nome">フェルナンダ・アゼベド</h1>
+            <h2>Front-end Developer</h2>
+            <div class="social-media">
+                <a href="https://github.com/fernanda-azevedo">Github</a>
+                <a href="https://www.linkedin.com/in/fernanda0azevedo/">Linkedin</a>
+            </div>
+        </div>
+        <img id="eu" src="../public/img/Fer.svg" alt="" srcset="">
+        <!-- Fim da home-->
+
+    </header>
+    <!-- Fim do Header -->
+
+    <!-- Início da Seção "Sobre" -->
+    <div class="sobre">
+        <h2 class="container_titulo">Sobre Mim</h2>
+        <div class="sobre_container_filho container grid">
+            <img src="../public/img/fernanda.png" alt="" class="sobre_imagem">
+            <div class="sobre_dados">
+                <p class="sobre_descricao">Estudante de Desenvolvimento Front-end e Design de User Experience e User
+                    Interface (UX/UI)</p>
+                <div class="sobre_info">
+                    <div>
+                        <span class="sobre_info-titulo">08+</span>
+                        <span class="sobre_info">Meses <br> experiência</span>
+                    </div>
+                    <div>
+                        <span class="sobre_info-titulo">03+</span>
+                        <span class="sobre_info">Projetos <br> feitos</span>
+                    </div>
+                    <div>
+                        <span class="sobre_info-titulo">05+</span>
+                        <span class="sobre_info">Cursos <br> realizados</span>
+                    </div>
+                </div>
+                <!--  ícone de download -->
+                <div class="botao_sobre">
+                    <a download="../public/img/cv.svg" href="../public/img/cv.svg" class="botao">
+                        Baixar CV <i class="uil uil-download-alt button__icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fim da Seção "Sobre" -->
+
+    <!-- Início da seção missão, valores e etc. -->
+    <div class="div-geral">
+        <div class="container-3pilares">
+            <!-- primeiro card -->
+            <div class="cartao">
+                <div class="imgBx">
+                    <!-- imagem 1 aqui -->
+                    <img
+                        src="../public/img/empatia.png">
+                </div>
+                <div class="conteudo">
+                    <p>O primeiro e principal pilar do Design Thinking <br>
+                        A empatia é a capacidade de compreender o sentimento ou reação da outra pessoa imaginando-se nas mesmas circunstâncias.</p>
+                </div>
+            </div>
+            <!-- segundo cartao -->
+            <div class="cartao">
+                <div class="imgBx">
+                    <!-- imagem 2 aqui -->
+                    <img
+                        src="../public/img/criatividade.png">
+                </div>
+                <div class="conteudo">
+                    <p>A criatividade é uma habilidade mental, por meio dela é possível ter ideias e formar pensamentos que costumam fugir de padrões. É um processo que envolve o cérebro por estimular novas conexões entre suas ideias para garantir novas soluções.</p>
+                </div>
+            </div>
+            <!-- terceiro cartao -->
+            <div class="cartao">
+                <div class="imgBx">
+                    <!-- imagem 3 aqui -->
+                    <img src="../public/img/colaboração.png">
+                </div>
+                <div class="conteudo">
+                    <p>A Colaboração trabalha com o desenvolvimento em conjunto, onde cada colaborador ajuda ao outro dando ideias e sugerindo formas de resolver um problema. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fim da seção missão, valores e etc.-->
+
+    <!-- Início da Seção "Qualificação" -->
+    <section class="qualificacao section">
+        <div class="titulos">
+            <h2 class="section__titulo">Qualificação</h2>
+            <span class="section__subtitulo">Minha jornada pessoal</span>
+        </div>
+        <div class="qualificacao__container container">
+            <div class="qualificacao__tabs">
+                <div class="qualificacao_button button--flex qualificacao_active" data-target='#education'>
+                    <i class="uil uil-graduation-cap qualificacao__icon"></i> Educação
+                </div>
+                <div class="qualificacao__button button--flex" data-target='#work'>
+                    <i class="uil uil-briefcase-alt qualificacao__icon"></i> Cursos
+                </div>
+            </div>
+            <div class="qualificacao__sections">
+
+                <!-- Qualoificação: Educação -->
+                <div class="qualificacao_content qualificacao_active" data-content id="education">
+                    <!-- qualificacao 1 -->
+                    <div class="qualificacao__data">
+                        <div class="esquerda">
+                            <h3 class="qualificacao__titulo">Ensino Médio</h3>
+                            <span class="qualificacao__subtitulo">E.E Profº Jair Toledo Xavier</span>
+                            <div class="qualificacao__calendar">
+                                <i class="uil uil-calendar-alt"></i> 10/10/2018
+                            </div>
+                        </div>
+                        <div>
+                            <span class="qualificacao__rounder"></span>
+                            <span class="qualificacao__line"></span>
+                        </div>
+                    </div>
+
+                    <!--Qualificacao 2-->
+                    <div class="qualificacao__data">
+                        <div></div>
+                        <div>
+                            <span class="qualificacao__rounder"></span>
+                            <span class="qualificacao__line"></span>
+                        </div>
+                        <div>
+                            <h3 class="qualificacao__titulo">Análise e Desenvolvimento de Sistemas</h3>
+                            <span class="qualificacao__subtitulo">BandTec Faculdade de Tecnologia</span>
+                            <div class="qualificacao__calendar">
+                                <i class="uil uil-calendar-alt"></i> 2021 - Atual
+                            </div>
+                        </div>
+                        <div id="ultima_bolinha">
+                            <span class="qualificacao__rounder"></span>
+                            <!-- <span class="qualificacao__line"></span> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Qualificacao: Cursos -->
+                <div class="qualificacao__content" data-content id="work">
+                    <!-- qualificacao 1 -->
+                    <div class="qualificacao__data">
+                        <div></div>
+                        <div>
+                            <span class="qualificacao__rounder"></span>
+                            <span class="qualificacao__line"></span>
+                        </div>
+                        <div>
+                            <h3 class="qualificacao__titulo">Introdução ao Desenvolvimento Web</h3>
+                            <span class="qualificacao__subtitulo">Instituto PROA</span>
+                            <div class="qualificacao__calendar">
+                                <i class="uil uil-calendar-alt"></i> 2020
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- qualificacao 2 -->
+                    <div class="qualificacao__data">
+                        <div class="esquerda">
+                            <h3 class="qualificacao__titulo">Língua Inglesa</h3>
+                            <span class="qualificacao__subtitulo">Mackenzie</span>
+                            <div class="qualificacao__calendar">
+                                <i class="uil uil-calendar-alt"></i> 10/05/2018
+                            </div>
+                        </div>
+                        <div>
+                            <span class="qualificacao__rounder"></span>
+                            <span class="qualificacao__line"></span>
+                        </div>
+                    </div>
+
+                    <!-- Qualificacao 3 -->
+                    <div class="qualificacao__data">
+                        <div></div>
+                        <div>
+                            <span class="qualificacao__rounder"></span>
+                            <span class="qualificacao__line"></span>
+                        </div>
+                        <div>
+                            <h3 class="qualificacao__titulo">Curso de UX</h3>
+                            <span class="qualificacao__subtitulo">UX/UI Basic skills</span>
+                            <div class="qualificacao__calendar">
+                                <i class="uil uil-calendar-alt"></i> 2020
+                            </div>
+                        </div>
+                        <div id="ultima_bolinha">
+                            <span class="qualificacao__rounder"></span>
+                            <!-- <span class="qualificacao__line"></span> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fim da Seção "Qualificação" -->
+
+    <!-- Estrelas -->
+    <section class="star">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </section>
+    <!-- Estrelas -->
+
+    <!-- Início da Seção "Habilidades" -->
+    <section class="habilidades" id="habilidades">
+        <div class="container_titulo"><br>
+            <h2 class="titulo">Habilidades</h2>
+            <span class="subtitulo">Meu nível técnico</span>
+        </div>
+        <div class="habilidades_container container grid">
+            <div>
+
+                <!-- Habilidades Front-end -->
+                <div class="habilidades_content habilidades_abrir">
+                    <div class="habilidades_header">
+                        <i class="uil uil-brackets-curly habilidades_icone"></i>
+                        <div>
+                            <h1 class="categoria_habilidades">Dev Frontend</h1>
+                        </div>
+                        <i class="uil uil-angle-down habilidades_setinha"></i>
+                    </div>
+                    <div class="habilidades_lista grid">
+                        <div class="habilidades_dados">
+                            <div class="titulo_habilidades">
+                                <h3 class="nome_habilidades">HTML</h3>
+                                <span class="numero_habilidades">90%</span>
+                            </div>
+                            <div class="barra_habilidades">
+                                <span class="porcentagem_habilidades habilidades_html"></span>
+                            </div>
+                        </div>
+                        <div class="habilidades_dados">
+                            <div class="titulo_habilidades">
+                                <h3 class="nome_habilidades">CSS</h3>
+                                <span class="numero_habilidades">80%</span>
+                            </div>
+                            <div class="barra_habilidades">
+                                <span class="porcentagem_habilidades habilidades_css"></span>
+                            </div>
+                        </div>
+                        <div class="habilidades_dados">
+                            <div class="titulo_habilidades">
+                                <h3 class="nome_habilidades">JavaScript</h3>
+                                <span class="numero_habilidades">60%</span>
+                            </div>
+                            <div class="barra_habilidades">
+                                <span class="porcentagem_habilidades habilidades_js"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Habilidades: Back-end -->
+            <div class="habilidades_content habilidades_fechar">
+                <div class="habilidades_header">
+                    <i class="uil uil-server-network habilidades_icone"></i>
+                    <div>
+                        <h1 class="categoria_habilidades">Dev Backend</h1>
+                    </div>
+                    <i class="uil uil-angle-down habilidades_setinha"></i>
+                </div>
+                <div class="habilidades_lista grid">
+                    <div class="habilidades_dados">
+
+                        <div class="habilidades_dados">
+                            <div class="titulo_habilidades">
+                                <h3 class="nome_habilidades">Node.JS</h3>
+                                <span class="numero_habilidades">30%</span>
+                            </div>
+                            <div class="barra_habilidades">
+                                <span class="porcentagem_habilidades habilidades_node"></span>
+                            </div>
+                        </div>
+                        <div class="habilidades_dados">
+                            <div class="titulo_habilidades">
+                                <h3 class="nome_habilidades">Banco de dados - MySQL</h3>
+                                <span class="numero_habilidades">55%</span>
+                            </div>
+                            <div class="barra_habilidades">
+                                <span class="porcentagem_habilidades habilidades_python"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Habilidades: designer-->
+                <div class="habilidades_content habilidades_fechar">
+                    <div class="habilidades_header">
+                        <i class="uil uil-swatchbook habilidades_icone"></i>
+                        <div>
+                            <h1 class="categoria_habilidades">Designer</h1>
+                        </div>
+                        <i class="uil uil-angle-down habilidades_setinha"></i>
+                    </div>
+                    <div class="habilidades_lista grid">
+                        <div class="habilidades_dados">
+                            <div class="titulo_habilidades">
+                                <h3 class="nome_habilidades">Figma</h3>
+                                <span class="numero_habilidades">90%</span>
+                            </div>
+                            <div class="barra_habilidades">
+                                <span class="porcentagem_habilidades habilidades_figma"></span>
+                            </div>
+                        </div>
+                        <div class="habilidades_dados">
+                            <div class="titulo_habilidades">
+                                <h3 class="nome_habilidades">Adobe Xd</h3>
+                                <span class="numero_habilidades">85%</span>
+                            </div>
+                            <div class="barra_habilidades">
+                                <span class="porcentagem_habilidades habilidades_sketch"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Fim da seção Habilidades -->
+
+    <!-- Inícios Modais: Serviços -->
+    <section class="servicos section" id="servicos">
+        <div class="titulos">
+            <h2 class="section_titulo">Serviços</h2>
+        </div>
+        <div class="servicos__container container grid">
+
+            <!-- Ux Design (modal 1)-->
+            <div class="servicos__conteudo">
+                <div>
+                    <i class="uil uil-web-grid servicos__icone"></i>
+                    <h3 class="servicos__titulo">UI/UX <br> Designer</h3>
+                </div>
+                <span class="button button--flex button--small button--link servicos__button">
+                    Veja Mais
+                    <i class="uil uil-arrow-right button__icone"></i>
+                </span>
+                <div class="servicos__modal">
+                    <div class="servicos__modal-conteudo">
+                        <h4 class="servicos__modal-titulo">UI/UX <br> Designer</h4>
+                        <i class="uil uil-times servicos__modal-close"></i>
+                        <ul class="servicos__modal-servicos grid">
+                            <li class="servicos__modal-service">
+                                <i class="uil uil-check-circle servicos__modal-icone"></i>
+                                <p>Minha base é design thinking.</p>
+                            </li>
+                            <li class="servicos__modal-service">
+                                <i class="uil uil-check-circle servicos__modal-icone"></i>
+                                <p>O usuário precisa ter a melhor experiência possível.</p>
+                            </li>
+                            <li class="servicos__modal-service">
+                                <i class="uil uil-check-circle servicos__modal-icone"></i>
+                                <p>Interações profundas com o user.</p>
+                            </li>
+                            <li class="servicos__modal-service">
+                                <i class="uil uil-check-circle servicos__modal-icone"></i>
+                                <p>Empatia sempre.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dev frontend (modal 2)-->
+            <div class="servicos__conteudo">
+                <div>
+                    <i class="uil uil-arrow servicos__icone"></i>
+                    <h3 class="servicos__titulo">Desenvolvedora <br> Frontend</h3>
+                </div>
+                <span class="button button--flex button--small button--link servicos__button">
+                    Veja Mais
+                    <i class="uil uil-arrow-right button__icone"></i>
+                </span>
+                <div class="servicos__modal">
+                    <div class="servicos__modal-conteudo">
+                        <h4 class="servicos__modal-titulo">Desenvolvedora<br> Frontend</h4>
+                        <i class="uil uil-times servicos__modal-close"></i>
+                        <ul class="servicos__modal-servicos grid">
+                            <li class="servicos__modal-service">
+                                <i class="uil uil-check-circle servicos__modal-icone"></i>
+                                <p>Faço belas interfaces</p>
+                            </li>
+                            <li class="servicos__modal-service">
+                                <i class="uil uil-check-circle servicos__modal-icone"></i>
+                                <p>Interações com animações.</p>
+                            </li>
+                            <li class="servicos__modal-service">
+                                <i class="uil uil-check-circle servicos__modal-icone"></i>
+                                <p>Você diz sua ideia e eu crio.</p>
+                            </li>
+                            <li class="servicos__modal-service">
+                                <i class="uil uil-check-circle servicos__modal-icone"></i>
+                                <p>Preços acessíveis.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--   Designer (modal 3)  -->
+            <div class="servicos__conteudo">
+                <div>
+                    <i class="uil uil-pen servicos__icone"></i>
+                    <h3 class="servicos__titulo"> <br> Designer</h3>
+                </div>
+                <span class="button button--flex button--small button--link servicos__button">
+                    Veja Mais
+                    <i class="uil uil-arrow-right button__icone"></i>
+                </span>
+                <div class="servicos__modal">
+                    <div class="servicos__modal-conteudo">
+                        <h4 class="servicos__modal-titulo"><br> Designer</h4>
+                        <i class="uil uil-times servicos__modal-close"></i>
+                        <ul class="servicos__modal-servicos grid">
+                            <li class="servicos__modal-service">
+                                <i class="uil uil-check-circle servicos__modal-icone"></i>
+                                <p>Eu faço interfaces mobile e desktop.</p>
+                            </li>
+                            <li class="servicos__modal-service">
+                                <i class="uil uil-check-circle servicos__modal-icone"></i>
+                                <p>Páginas web responsivas.</p>
+                            </li>
+                            <li class="servicos__modal-service">
+                                <i class="uil uil-check-circle servicos__modal-icone"></i>
+                                <p>Crio interações com o usuário.</p>
+                            </li>
+                            <li class="servicos__modal-service">
+                                <i class="uil uil-check-circle servicos__modal-icone"></i>
+                                <p>Entrego rápido e bem feito.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><br><br><br><br>
+    <!-- Fim da Seção "Serviços" -->
+
+    <!-- Início da Seção "Contrate-me" -->
+    <section class="foto section">
+        <div class="foto__bg">
+            <div class="foto__container container grid">
+                <div class="foto__data">
+                    <h2 class="foto__title">Você tem um novo projeto!</h2>
+                    <p class="foto__descricao">Faça um orçamento agora e ganhe 30% desconto.</p>
+                    <a href="orcamento/orcamento.html" class="button button--flex button--white">
+                        Orçamento <i class="uil uil-message nav_icon fotoicon button_icon"></i>
+                    </a>
+                </div>
+                <img src="../public/img/fe.png" class="foto__img">
+            </div>
+        </div>
+    </section>
+    <!-- Fim da Seção "Contrato" -->
+
+    <!-- Início da Seção "Projetos" -->
+    <div class="container">
+        <!-- Projeto 1 - app Florence -->
+        <div class="card-container">
+            <div class="card">
+                <a id="popup" href="#open-modal" class="modal-login">
+                    <div class="card-wrapper">
+                        <h2>Florence</h2>
+                        <p>Vem ver!</p>
+                </a>
+            </div>
+        </div>
+        <div class="card-texto">
+            Prototipei pela primeira vez na vida, uma interface destinada à mobile, dedicada ao hackathon da Shawee,
+            onde todos os squads foram formados somente por mulheres. Me acolheram no grupo como UI/UX, e o resultado
+            foi satisfatório, além da boa causa da proposta do app, que era fazer a anamnese de pacientes para evitar
+            que eles adquiram futuras doenças, armazenando seu histórico médico no nosso aplicativo.
+        </div>
+    </div>
+
+    <!-- Projeto 2 - app Cvitae -->
+    <div class="card-container">
+        <div class="card">
+            <a id="popup" href="#open-modal" class="modal-login">
+                <div class="card-wrapper">
+                    <h2>CVitæ</h2>
+                    <p>Vem ver!</p>
+            </a>
+        </div>
+    </div>
+    <div class="card-texto">
+        Uma iniciativa quase que familiar: meu cunhado, meu amigo e eu resolvemos pensar sobre uma dificuldade dos 14,4
+        milhões de desempregados no Brasil: fazer um currículo. É uma limitação que os impede de conseguir um emprego,
+        por isso nossa ideia foi um app que gerasse um CV bonito e em 3 passos: Conecte-se com o Linkedin, escolha um
+        template e exporte para os recrutadores.
+        </div>
+    </div>
+
+    <!-- Projeto 3 - site Capsule corp -->
+    <div class="card-container">
+        <div class="card">
+            <a id="popup" href="#open-modal" class="modal-login">
+                <div class="card-wrapper">
+                    <h2>Capsule <br> Corp</h2>
+                    <p>Vem ver!</p>
+            </a>
+        </div>
+    </div>
+    <div class="card-texto">
+        Projeto feito para o Demo day do Instituto PROA 4.0, prototipei essa tela por uma causa muito bonita: a ODS 7 da
+        ONU, energia acessível e limpa para regiões necessitadas.
+    </div>
+    </div>
+    </div><br><br>
+    <!-- Fim da Seção "Projetos" -->
+
+    <div class="modal-window" id="open-modal">
+        <div class="display">
+            <a href="#container" title="Close" class="modal-close">
+                <i class="fa fa-times"></i>
+            </a>
+
+            <h1>Opa, que tal fazer Login?</h1>
+
+            <p> Caso já tenha feito seu login, acesse o projeto </p>
+            
+        </div>
+    </div>
+
+    <!-- Início da Seção "Contato" -->
+    <section class="contato section" id="contato">
+        <div class="titulos">
+            <h2 class="section__titulo">Fale comigo</h2>
+            <span class="section__subtitulo">Minhas informações</span>
+        </div>
+        <div class="contato__container contato_conteudo contato_grid">
+            <div>
+                <div class="contato__information">
+                    <i class="uil uil-phone contato__icon"></i>
+                    <div>
+                        <h3 class="contato__titulo">Contato</h3>
+                        <span class="contato__subtitulo">(11)94034-1355</span>
+                    </div>
+                </div>
+                <div class="contato__information">
+                    <i class="uil uil-envelope contato__icon"></i>
+                    <div>
+                        <h3 class="contato__titulo">E-mail</h3>
+                        <span class="contato__subtitulo">fernannda.azevedo@gmail.com</span>
+                    </div>
+                </div>
+                <div class="contato__information">
+                    <i class="uil uil-map-marker contato__icon"></i>
+                    <div>
+                        <h3 class="contato__titulo">Localização</h3>
+                        <span class="contato__subtitulo">São Paulo - SP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contato_inputs">
+            <form action="" class="contato__form contato_grid">
+                <div class="contato__inputs contato_grid">
+                    <div class="contato__content">
+                        <label for="" class="contato__label">Nome</label>
+                        <input type="text" class="contato__input">
+                    </div>
+                    <div class="contato__content">
+                        <label for="" class="contato__label">E-mail</label>
+                        <input type="email" class="contato__input">
+                    </div>
+                    <div class="contato__content">
+                        <label for="" class="contato__label">Projeto</label>
+                        <input type="text" class="contato__input">
+                    </div>
+                    <div class="contato__content">
+                        <label for="" class="contato__label">Mensagem</label>
+                        <textarea name="" id="" cols="0" rows="7" class="contato__input"></textarea>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="pagamento.html" class="botao_input button--flex"> Envie uma Mensagem
+                        <i class="uil uil-message icone_botoes"></i>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- FIM DA SEÇÃO CONTATO -->
+
+    <!-- INÍCIO DO FOOTER -->
+    <div>
+        <div class="footer">
+            <svg width="100%" height="100%" viewBox="100 -200 600 500" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                <path id="path">
+                    <animate attributeName="d" from="m0,110 h0" to="m0,110 h1100" dur="5.8s" begin="0s"
+                        repeatCount="indefinite" />
+                </path>
+                <text font-size="100" justify-content="center" font-family="Poppins">
+                    <textPath xlink:href="#path">E aí, gostou? ;)</textPath>
+                </text>
+            </svg>
+        </div>
+        <!-- Cabeçalho dos unicórnios -->
+        <header id="unicorn">
+            <marquee behavior="alternate">
+                🦄 🖤 🦄 🖤 🦄 🖤 🦄 🖤 🦄 🖤 🦄 🖤 🦄 🖤 🦄 🖤 🦄 🖤 🦄 🖤 🦄🖤 🦄 🖤 🦄 🖤 🦄 🖤 🦄 🖤 🦄 </marquee>
+        </header>
+        <!-- Scroll up -->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+    </div>
+    <!-- Fim do footer -->
+</body>
+</html>
+
+<!-- Javascript começa aqui-->
+<!-- // A função document.querySelector() buscaa um elemento do mundo HTML e traz para o mundo
+  // JavaScript para poder manipulá-lo. A função recebe um parâmetro, um caso, um seletor CSS (id). 
+
+
+  // O método JavaScript addEventListener () permite configurar funções a serem chamadas quando um evento 
+  // especificado acontece, como quando um usuário clica em um botão. -->
+<script>
+        // habilidades
+        var skillsContent = document.getElementsByClassName('habilidades_content'),
+            skillsHeader = document.querySelectorAll('.habilidades_header')
+        function toggleSkills() {
+            var itemClass = this.parentNode.className
+            for (i = 0; i < skillsContent.length; i++) {
+                skillsContent[i].className = 'habilidades_content habilidades_fechar'
+            }
+            if (itemClass === 'habilidades_content habilidades_fechar') {
+                this.parentNode.className = 'habilidades_content habilidades_abrir'
+            }
+        }
+        skillsHeader.forEach((el) => {
+            el.addEventListener('click', toggleSkills)
+        })
+        // fim da seção habilidades
+
+        // serviços
+        var modalViews = document.querySelectorAll('.servicos__modal'),
+            modalBtns = document.querySelectorAll('.servicos__button'),
+            modalCloses = document.querySelectorAll('.servicos__modal-close')
+        var modal = function (modalClick) {
+            modalViews[modalClick].classList.add('active-modal')
+        }
+        modalBtns.forEach((modalBtn, i) => {
+            modalBtn.addEventListener('click', () => { modal(i) })
+        })
+        modalCloses.forEach((modalClose) => {
+            modalClose.addEventListener('click', () => {
+                modalViews.forEach((modalView) => {
+                    modalView.classList.remove('active-modal')
+                })
+            })
+        })
+        // fim da seção serviços
+
+        // qualificação
+        var tabs = document.querySelectorAll('[data-target]'),
+            tabContents = document.querySelectorAll('[data-content]')
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                var target = document.querySelector(tab.dataset.target)
+
+                tabContents.forEach(tabContent => {
+                    tabContent.classList.remove('qualificacao__active')
+                })
+                target.classList.add('qualificacao__active')
+
+                tab.forEach(tab => {
+                    tab.classList.remove('qualificacao__active')
+                })
+                tab.classList.add('qualificacao__active')
+            })
+        })
+    // fim da seção qualificação
+    </script>

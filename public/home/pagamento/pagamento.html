@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forma de Pagamento</title>
+    <link rel="stylesheet" href="pagamento.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Confirme seu pagamento</h1>
+        <div class="first-row">
+            <div class="owner">
+                <h3>Nome no cartão</h3>
+                <div class="input-field">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="cvv">
+                <h3>CVV</h3>
+                <div class="input-field">
+                    <input type="password">
+                </div>
+            </div>
+        </div>
+        <div class="second-row">
+            <div class="card-number">
+                <h3>Número do cartão</h3>
+                <div class="input-field">
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <div class="third-row">
+            <h3>Data de Vencimento</h3>
+            <div class="selection">
+                <div class="date">
+                    <select name="months" id="months">
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Fev</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Abr</option>
+                        <option value="May">Mai</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Jul">Jul</option>
+                        <option value="Aug">Ago</option>
+                        <option value="Sep">Set</option>
+                        <option value="Oct">Out</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dez</option>
+                    </select>
+                    <select name="years" id="years">
+                        <option value="2020">2028</option>
+                        <option value="2019">2027</option>
+                        <option value="2019">2026</option>
+                        <option value="2019">2025</option>
+                        <option value="2019">2024</option>
+                        <option value="2019">2023</option>
+                        <option value="2019">2022</option>
+                        <option value="2019">2021</option>
+                    </select>
+                </div>
+                <div class="cards">
+                    <a href="#"><img src="mc.png" alt=""></a>
+                    <a href="#"><img src="vi.png" alt=""></a>
+                    <a href="#"><img src="pp.png" alt=""></a>
+                </div>
+            </div>    
+        </div>
+        <a id="confirmar" href="../../index.html">Confirmar</a>
+    </div>
+</body>
+</html>
